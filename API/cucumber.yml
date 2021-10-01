@@ -1,0 +1,10 @@
+---
+default: -p html -p prd
+
+###AMBIENTES###
+prd: AMBIENTE=prd
+homolg: AMBIENTE=homolog
+
+###Relatório####
+
+html: --format pretty -f html -o reports/relatorio_de_testes.html
