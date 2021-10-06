@@ -12,7 +12,7 @@ Quando('faço um GET para listar todos os contatos') do
   end
   
   Quando('faço um GET para listar por ID de usuario') do
-    @id = "587"
+    @id = "631"
     @request_contatos = contatos.get_listar_por_id(@id)
   end
   
@@ -74,7 +74,7 @@ Quando('faço um GET para listar todos os contatos') do
   end
   
   Quando('faço um PATCH para editar alguma informação específica do usuário') do
-    @id = "592"
+    @id = "631"
     @payload_contatos = build(:user_completo).cadastro_patch
     puts @payload_contatos
     @request_contatos = contatos.patch_cadastro(@id, @payload_contatos)
