@@ -25,6 +25,7 @@ Cenario: [Post] Criar Contato com sucesso
 Quando faço um POST para cadastrar um usuário
 Então a API cadastra o usuario com sucesso
 E retorna o status code 201 "Created"
+E retorna os dados de contrato da API de cadastro
 
     ###Variações de EMAIL
 

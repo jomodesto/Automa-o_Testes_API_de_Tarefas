@@ -89,3 +89,7 @@ Quando('faço um GET para listar todos os contatos') do
   Então('a API retorna uma response como null') do
     expect(@request_contatos.parsed_response).to eq nil
   end
+
+  Então('retorna os dados de contrato da API de cadastro') do
+        expect(@request_contatos).to match_json_schema("contracts_schema")
+  end
